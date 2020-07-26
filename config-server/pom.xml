@@ -7,24 +7,20 @@
         <groupId>com.chan</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>service-provider</artifactId>
+    <groupId>com.chan.springcloud</groupId>
+    <artifactId>config-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>service-provider</name>
-    <description>Spring Cloud service-provider</description>
+    <name>config-server</name>
+    <description>Spring Cloud Config Server</description>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <!--消息总线rabbitmq-->
         <dependency>
@@ -42,5 +38,4 @@
         </dependency>
 
     </dependencies>
-
 </project>

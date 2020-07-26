@@ -1,8 +1,12 @@
-server:
-  port: 9003
 spring:
-  application:
-    name: provider
+  cloud:
+    config:
+      name: user
+      profile: dev
+      uri: http://localhost:4001
+      discovery:
+        enabled: true
+        service-id: config-server
 eureka:
   client:
     service-url:
