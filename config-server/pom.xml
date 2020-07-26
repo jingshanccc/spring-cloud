@@ -7,7 +7,6 @@
         <groupId>com.chan</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.chan.springcloud</groupId>
     <artifactId>config-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>config-server</name>

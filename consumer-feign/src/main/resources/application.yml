@@ -2,7 +2,7 @@ server:
   port: 9004
 spring:
   application:
-    name: consumer
+    name: consumer-feign
 eureka:
   client:
     service-url:

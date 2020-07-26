@@ -1,0 +1,22 @@
+server:
+  port: 5001
+spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    service-url:
+       defaultZone: http://eureka7001.com:7001/eureka/ #单节点
+#      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: gateway-zuul #服务名
+    prefer-ip-address: true #使用自己的ip地址注册而不是主机名
+zuul:
+  routes:
+    ribbon:
+      path: /api-ribbon/**  #代理名称
+      serviceId: service-consumer  #代理的服务
+    feign:
+      path: /api-feign/**
+      serviceId: consumer-feign
+#      prefix: /api  #公共前缀
