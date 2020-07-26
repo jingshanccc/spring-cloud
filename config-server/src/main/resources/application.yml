@@ -7,9 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/jingshanccc/springcloud-config.git
-          username: jingshanccc
-          password: august520
+          uri:
+          username:
+          password:
           basedir: ./repo-config/ #缓存到本地的路径 执行的是new File("./repo-config/")操作
     bus:
       trace:
